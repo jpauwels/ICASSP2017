@@ -1,0 +1,17 @@
+fragments icassp-chordpriorstructure.pmml;
+
+type Time;
+type Chord;
+type Observation;
+
+random Chord chord(Time);
+random Observation observation(Time);
+
+logical boolean next(Time, Time);
+prolog next(T1,T2) :- T is T1+1, T=T2.
+relationKey next(_,t);
+
+combining-rule chord noisy-and-n;
+
+logical boolean similar(Time, Time);
+relationKey similar(_,t);

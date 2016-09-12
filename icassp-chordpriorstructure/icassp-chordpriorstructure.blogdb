@@ -1,0 +1,7 @@
+observation(0)=O0
+observation(1)=O1
+observation(2)=O2
+observation(3)=O3
+observation(4)=O4
+similar(0,3)=True
+similar(1,4)=True
